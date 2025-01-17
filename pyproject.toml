@@ -39,7 +39,9 @@ mkdocs = "^1.5.3"
 mkdocs-material = "^9.4.4"
 mkdocs-render-swagger-plugin = "^0.1.0"
 mkdocs-macros-plugin = "^1.0.4"
+py-markdown-table="^1.2.0"
 linkcheckmd = "^1.4.0"
+
 
 [build-system]
 requires = ["poetry-core"]
