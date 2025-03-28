@@ -1,7 +1,40 @@
+csv:
+  header: true                          # If the first row is a header. If true, name of each column is required.
+  delimiter: ,                          # Delimiter character in CSV file.
+  quote_char: \                         # Quote character in CSV file.
+  enclosure: '"'                        # Enclosure for each field in CSV file.
+structural_rules: # Here are default values.
+  strict_column_order: true             # Ensure columns in CSV follow the same order as defined in this YML schema. It works only if "csv.header" is true.
+  allow_extra_columns: false            # Allow CSV files to have more columns than specified in this YML schema.
 columns:
   - name: name
     rules:
       not_empty: true
+  - name: code_name
+  - name: generation
+  - name: foundry
+  - name: release_date
+  - name: frequency
   - name: tdp
     rules:
       is_float: true
+  - name: cores
+    rules:
+      is_float: true
+  - name: threads
+    rules:
+      is_float: true
+  - name: transistors
+  - name: process_size
+    rules:
+      is_float: true
+  - name: die_size
+  - name: io_die_size
+  - name: io_process_size
+  - name: total_die_size
+    rules:
+      is_float: true
+  - name: total_die_size_source
+  - name: manufacturer
+  - name: model_range
+  - name: source
