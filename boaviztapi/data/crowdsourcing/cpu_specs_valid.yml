@@ -1,0 +1,4 @@
+columns:
+  - name: name
+    rules:
+      not_empty: true

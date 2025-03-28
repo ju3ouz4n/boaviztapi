@@ -1,0 +1,22 @@
+name: Demo CI
+
+on:
+  pull_request:
+    branches:
+      - "*"
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  demo:
+    name: Demo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Minimal valid example
+      - name: 👍 Valid CSV file
+        uses: jbzoo/csv-blueprint@master
+        with:
+          csv: boaviztapi/data/crowdsourcing/cpu_specs.csv
+          schema: boaviztapi/data/crowdsourcing/cpu_specs_valid.yml
