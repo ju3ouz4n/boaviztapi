@@ -2,3 +2,6 @@ columns:
   - name: name
     rules:
       not_empty: true
+  - name: tdp
+    rules:
+      is_float: true
