@@ -1,5 +1,5 @@
 id,vcpu,memory,ssd_storage,hdd_storage,gpu_units,platform,source
-a1.m,edium,1,2,0,0,0,a1.metal,
+a1.medium,1,2,0,0,0,a1.metal,
 a1.large,2,4,0,0,0,a1.metal,
 a1.xlarge,4,8,0,0,0,a1.metal,
 a1.2xlarge,8,16,0,0,0,a1.metal,
