@@ -1,6 +1,6 @@
 id,vcpu,memory,ssd_storage,hdd_storage,gpu_units,platform,source
 c4a-standard-1,1,4,0,0,0,c4a-standard,https://cloud.google.com/compute/docs/general-purpose-machines?hl=en#c4a_machine_types
-c4a-,standard-2,2,8,0,0,0,c4a-standard,https://cloud.google.com/compute/docs/general-purpose-machines?hl=en#c4a_machine_types
+c4a-standard-2,2,8,0,0,0,c4a-standard,https://cloud.google.com/compute/docs/general-purpose-machines?hl=en#c4a_machine_types
 c4a-standard-4,4,16,0,0,0,c4a-standard,https://cloud.google.com/compute/docs/general-purpose-machines?hl=en#c4a_machine_types
 c4a-standard-8,8,32,0,0,0,c4a-standard,https://cloud.google.com/compute/docs/general-purpose-machines?hl=en#c4a_machine_types
 c4a-standard-16,16,64,0,0,0,c4a-standard,https://cloud.google.com/compute/docs/general-purpose-machines?hl=en#c4a_machine_types
