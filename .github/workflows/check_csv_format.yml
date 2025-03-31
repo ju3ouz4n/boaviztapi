@@ -22,7 +22,7 @@ jobs:
 
       - name: Install poetry
         run: |
-          python -m pip3 install poetry
+          python -m pip install poetry
 
       - name: Configure poetry
         run: |
