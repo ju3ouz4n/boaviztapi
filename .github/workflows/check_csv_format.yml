@@ -1,0 +1,43 @@
+name: Demo CI
+
+on:
+  pull_request:
+    branches:
+      - "*"
+  push:
+    branches:
+      - 'feat/csv-validate-precommit-and-ci'
+
+jobs:
+  demo:
+    name: Demo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Minimal valid example
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.12.0
+
+      - name: Install poetry
+        run: |
+          python -m pip3 install poetry
+
+      - name: Configure poetry
+        run: |
+          python -m poetry config virtualenvs.in-project true
+
+      - name: Cache the virtualenv
+        uses: actions/cache@v2
+        with:
+          path: ./.venv
+          key: ${{ runner.os }}-venv-${{ hashFiles('**/poetry.lock') }}
+
+      - name: Install dependencies
+        run: |
+          python -m poetry install --only dev
+
+      - name: Run tests
+        run: |
+          python -m poetry run python -m chkcsv.py boaviztapi/data/crowdsourcing/cpu_specs.csv
