@@ -1,5 +1,5 @@
 id,vcpu,memory,ssd_storage,hdd_storage,gpu_units,platform,source
-d2ads,_v5,2,8.0,75.0,0.0,0,Dadsv5-Type1,"Vantage for instance specs (https://instances.vantage.sh/azure/), Azure docs for instance-host mapping, see README for details."
+d2ads_v5,2,8.0,75.0,0.0,0,Dadsv5-Type1,"Vantage for instance specs (https://instances.vantage.sh/azure/), Azure docs for instance-host mapping, see README for details."
 d4ads_v5,4,16.0,150.0,0.0,0,Dadsv5-Type1,"Vantage for instance specs (https://instances.vantage.sh/azure/), Azure docs for instance-host mapping, see README for details."
 d8ads_v5,8,32.0,300.0,0.0,0,Dadsv5-Type1,"Vantage for instance specs (https://instances.vantage.sh/azure/), Azure docs for instance-host mapping, see README for details."
 d16ads_v5,16,64.0,600.0,0.0,0,Dadsv5-Type1,"Vantage for instance specs (https://instances.vantage.sh/azure/), Azure docs for instance-host mapping, see README for details."
