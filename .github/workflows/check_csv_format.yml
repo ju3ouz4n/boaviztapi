@@ -39,6 +39,6 @@ jobs:
           python -m poetry lock
           python -m poetry install --only dev
 
-      - name: Run tests
+      - name: Run csv check
         run: |
-          python -m poetry run python -m chkcsv boaviztapi/data/crowdsourcing/cpu_specs.csv
+          python -m poetry run python chkcsv.py boaviztapi/data/crowdsourcing/cpu_specs.csv --linelength
