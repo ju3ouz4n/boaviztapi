@@ -7,6 +7,9 @@ on:
   push:
     branches:
       - 'feat/csv-validate-precommit-and-ci'
+    paths:
+      - 'boaviztapi/data/crowdsourcing/**/*.csv'
+      - 'boaviztapi/data/crowdsourcing/**/*.fmt'
 
 jobs:
   demo:
