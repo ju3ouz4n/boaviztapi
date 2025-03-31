@@ -41,4 +41,4 @@ jobs:
 
       - name: Run csv check
         run: |
-          python -m poetry run python chkcsv.py boaviztapi/data/crowdsourcing/cpu_specs.csv --linelength
+          python -m poetry run chkcsv.py boaviztapi/data/crowdsourcing/cpu_specs.csv --linelength
