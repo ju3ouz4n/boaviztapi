@@ -92,7 +92,7 @@ AMD EPYC 7F72,Rome,EPYC (Zen 2 (Rome)),TSMC,2020-04-14,3.2 GHz,240.0,24.0,48.0,"
 AMD EPYC 7H12,Rome,EPYC (Zen 2 (Rome)),TSMC,2019-09-18,2.6 GHz,280.0,64.0,128.0,"3,800 million",7.0,16x 74 mm²,416 mm2,14 nm,1600.0,io_die_size (416 mm2) + die_size (16x 74 mm²),AMD,EPYC,https://www.techpowerup.com/cpu-specs/epyc-7h12.c2244
 AMD EPYC 7V12,Rome,,,,2.45 GHz,240.0,64.0,128.0,,7.0,,,,,,,,"https://xmrig.com/benchmark/483bMw, https://gadgetversus.com/processor/amd-epyc-7v12-specs/, https://www.reddit.com/r/AMD_Stock/comments/ezajpb/new_amd_7v12_64core_processor/"
 AMD EPYC 7V13,,,,,2.5 GHz,240,64,128,,7,,,,,,,,
-AMD EPYC 7V73X,,,,,2.2 GHz,280,64,128,,7,,,,,,,,
+AMD EPYC 7V73X,,,,,2.2 GHz,280,64,128,,7,,,,
 AMD EPYC 9124,Genoa,EPYC (Zen 4 (Genoa)),TSMC,2022-11-10,3 GHz,200.0,16.0,32.0,"26,280 million",5.0,4x 72 mm²,397 mm²,6 nm,685.0,io_die_size (397 mm²) + die_size (4x 72 mm²),AMD,EPYC,https://www.techpowerup.com/cpu-specs/epyc-9124.c2917
 AMD EPYC 9174F,Genoa,EPYC (Zen 4 (Genoa)),TSMC,2022-11-10,4.1 GHz,320.0,16.0,32.0,"52,560 million",5.0,8x 72 mm²,397 mm²,6 nm,973.0,io_die_size (397 mm²) + die_size (8x 72 mm²),AMD,EPYC,https://www.techpowerup.com/cpu-specs/epyc-9174f.c2918
 AMD EPYC 9224,Genoa,EPYC (Zen 4 (Genoa)),TSMC,2022-11-10,2.5 GHz,200.0,24.0,48.0,"26,280 million",5.0,4x 72 mm²,397 mm²,6 nm,685.0,io_die_size (397 mm²) + die_size (4x 72 mm²),AMD,EPYC,https://www.techpowerup.com/cpu-specs/epyc-9224.c2919
