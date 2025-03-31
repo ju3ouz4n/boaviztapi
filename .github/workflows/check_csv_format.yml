@@ -8,9 +8,7 @@ on:
     branches:
       - 'feat/csv-validate-precommit-and-ci'
     paths:
-      - 'boaviztapi/data/crowdsourcing/**/*.csv'
-      - 'boaviztapi/data/crowdsourcing/**/*.fmt'
-
+      - 'boaviztapi/data/**'
 jobs:
   demo:
     name: Demo
@@ -44,4 +42,4 @@ jobs:
 
       - name: Run csv check
         run: |
-          python -m poetry run chkcsv.py boaviztapi/data/crowdsourcing/cpu_specs.csv --linelength
+          make checkcsv
