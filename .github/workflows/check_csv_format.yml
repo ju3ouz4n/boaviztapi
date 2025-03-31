@@ -35,11 +35,6 @@ jobs:
           path: ./.venv
           key: ${{ runner.os }}-venv-${{ hashFiles('**/poetry.lock') }}
 
-      - name: Install dependencies
-        run: |
-          python -m poetry lock
-          python -m poetry install --only dev
-
       - name: Run csv check
         run: |
           make checkcsv
