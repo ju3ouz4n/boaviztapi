@@ -6,7 +6,7 @@ repos:
       - id: chkcsv
         name: chkcsv
         entry: chkcsv.py
-        files: >
+        files: >-
             boaviztapi/data/(archetypes/server.csv|
             crowdsourcing/cpu_specs.csv|
             archetypes/cloud/aws.csv|archetypes/cloud/azure.csv|archetypes/cloud/gcp.csv|archetypes/cloud/scaleway.csv)$
