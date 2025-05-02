@@ -32,6 +32,11 @@ atomicwrites = "^1.4.1"
 httpx = "^0.28.1"
 requests = "^2.32.3"
 
+[tool.pytest.ini_options]
+markers = [
+    "prod_fixtures: marks tests with prod data dir needed )"
+]
+
 [tool.poetry.group.docs]
 optional = true
 
