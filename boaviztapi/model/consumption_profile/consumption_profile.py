@@ -8,11 +8,13 @@ import pandas as pd
 from scipy.optimize import curve_fit
 
 import boaviztapi.utils.fuzzymatch as fuzzymatch
-from boaviztapi import config, data_dir
+from boaviztapi import config
+from boaviztapi.parameters import settings
 from boaviztapi.dto.usage.usage import WorkloadTime
 from boaviztapi.model.boattribute import Boattribute, Status
 from boaviztapi.service.archetype import get_component_archetype, get_arch_value
 
+data_dir = settings.boavizta_api_data_dir
 fuzzymatch.pandas()
 
 _cpu_profile_consumption_df = pd.read_csv(os.path.join(data_dir, 'consumption_profile/cpu/cpu_profile.csv'))

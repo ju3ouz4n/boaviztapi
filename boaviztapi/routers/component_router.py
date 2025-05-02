@@ -3,7 +3,8 @@ from typing import List, Optional
 
 from fastapi import APIRouter, Body, HTTPException, Query
 
-from boaviztapi import config, data_dir
+from boaviztapi import config
+from boaviztapi.parameters import settings
 from boaviztapi.dto.component import CPU, RAM, Disk, PowerSupply, Motherboard, Case
 from boaviztapi.dto.component.cpu import mapper_cpu
 from boaviztapi.dto.component.other import mapper_motherboard, mapper_power_supply, mapper_case
@@ -16,6 +17,8 @@ from boaviztapi.routers.openapi_doc.examples import components_examples_openapi
 from boaviztapi.service.archetype import get_component_archetype, get_device_archetype_lst
 from boaviztapi.service.impacts_computation import compute_impacts
 from boaviztapi.service.verbose import verbose_component
+
+data_dir = settings.boavizta_api_data_dir
 
 component_router = APIRouter(
     prefix='/v1/component',

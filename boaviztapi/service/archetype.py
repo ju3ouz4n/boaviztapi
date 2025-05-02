@@ -4,8 +4,9 @@ import os
 from typing import Union
 
 import pandas as pd
+from boaviztapi.parameters import settings
 
-from boaviztapi import data_dir
+data_dir = settings.boavizta_api_data_dir
 
 
 def get_device_archetype_lst(path):

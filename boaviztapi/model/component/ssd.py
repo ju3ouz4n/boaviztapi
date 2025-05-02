@@ -2,12 +2,14 @@ import os
 
 import pandas as pd
 
-from boaviztapi import config, data_dir
+from boaviztapi import config
+from boaviztapi.parameters import settings
 from boaviztapi.model.boattribute import Boattribute
 from boaviztapi.model.component.component import Component
 from boaviztapi.service.archetype import get_component_archetype, get_arch_value
 from boaviztapi.utils.fuzzymatch import fuzzymatch_attr_from_pdf
 
+data_dir = settings.boavizta_api_data_dir
 
 class ComponentSSD(Component):
     _ssd_df = pd.read_csv(os.path.join(data_dir, 'crowdsourcing/ssd_manufacture.csv'))

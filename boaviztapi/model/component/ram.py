@@ -3,7 +3,8 @@ import os
 import pandas as pd
 
 import boaviztapi.utils.roundit as rd
-from boaviztapi import config, data_dir
+from boaviztapi import config
+from boaviztapi.parameters import settings
 from boaviztapi.model.boattribute import Boattribute
 from boaviztapi.model.component.component import Component
 from boaviztapi.model.consumption_profile.consumption_profile import RAMConsumptionProfileModel
@@ -11,6 +12,7 @@ from boaviztapi.model.impact import ImpactFactor
 from boaviztapi.service.archetype import get_arch_value, get_component_archetype
 from boaviztapi.utils.fuzzymatch import fuzzymatch_attr_from_pdf
 
+data_dir = settings.boavizta_api_data_dir
 
 class ComponentRAM(Component):
     NAME = "RAM"

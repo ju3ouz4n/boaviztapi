@@ -3,7 +3,8 @@ from typing import List, Union, Optional
 
 from fastapi import APIRouter, Query, Body, HTTPException
 
-from boaviztapi import config, data_dir
+from boaviztapi import config
+from boaviztapi.parameters import settings
 from boaviztapi.dto.device.user_terminal import UserTerminal, VrHeadset, mapper_user_terminal, Laptop, Desktop, Smartphone, \
     Television, Tablet, Box
 from boaviztapi.routers.openapi_doc.descriptions import all_archetype_user_terminals, all_terminal_categories, \
@@ -12,6 +13,8 @@ from boaviztapi.routers.openapi_doc.examples import end_user_terminal
 from boaviztapi.service.archetype import get_user_terminal_archetype, get_device_archetype_lst_with_type
 from boaviztapi.service.impacts_computation import compute_impacts
 from boaviztapi.service.verbose import verbose_device
+
+data_dir = settings.boavizta_api_data_dir
 
 terminal_router = APIRouter(
     prefix='/v1/terminal',

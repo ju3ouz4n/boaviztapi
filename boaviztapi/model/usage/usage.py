@@ -1,10 +1,14 @@
 import os
 
-from boaviztapi import config, data_dir
+from boaviztapi import config
+from boaviztapi.parameters import settings
 from boaviztapi.model.boattribute import Boattribute
 from boaviztapi.service.archetype import get_arch_value, get_server_archetype, get_cloud_instance_archetype
 from boaviztapi.service.factor_provider import get_available_countries, get_electrical_impact_factor, \
     get_electrical_min_max
+
+
+data_dir = settings.boavizta_api_data_dir
 
 _cpu_profile_path = os.path.join(data_dir, 'consumption_profile/cpu/cpu_profile.csv')
 _cloud_profile_path = os.path.join(data_dir, 'consumption_profile/cloud/cpu_profile.csv')

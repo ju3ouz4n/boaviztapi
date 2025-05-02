@@ -5,7 +5,8 @@ import pandas as pd
 
 from fastapi import APIRouter, Query, Body, HTTPException
 
-from boaviztapi import config, data_dir
+from boaviztapi import config
+from boaviztapi.parameters import settings
 from boaviztapi.dto.device import Cloud
 from boaviztapi.dto.device.device import mapper_cloud_instance
 from boaviztapi.model.services.cloud_instance import ServiceCloudInstance
@@ -15,6 +16,8 @@ from boaviztapi.routers.openapi_doc.examples import cloud_example
 from boaviztapi.service.archetype import get_cloud_instance_archetype, get_device_archetype_lst
 from boaviztapi.service.impacts_computation import compute_impacts
 from boaviztapi.service.verbose import verbose_device, verbose_cloud
+
+data_dir=settings.boavizta_api_data_dir
 
 cloud_router = APIRouter(
     prefix='/v1/cloud',
@@ -67,7 +70,6 @@ async def instance_cloud_impact(
     cloud_instance = Cloud()
     cloud_instance.usage = {}
     instance_archetype = get_cloud_instance_archetype(instance_type, provider)
-
     if not instance_archetype:
         raise HTTPException(status_code=404,
                             detail=f"{instance_type} at {provider} not found")

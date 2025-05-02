@@ -4,11 +4,14 @@ from typing import Optional, List
 import pandas as pd
 from fastapi import APIRouter, Body, Query, HTTPException
 
-from boaviztapi import config, data_dir
+from boaviztapi import config
+from boaviztapi.parameters import settings
 from boaviztapi.dto.device.iot import IoT, mapper_iot_device
 from boaviztapi.service.archetype import get_iot_device_archetype
 from boaviztapi.service.impacts_computation import compute_impacts
 from boaviztapi.service.verbose import verbose_device
+
+data_dir = settings.boavizta_api_data_dir
 
 iot = APIRouter(
     prefix='/v1/iot',

@@ -2,7 +2,9 @@ import os
 from pathlib import Path
 
 import yaml
-from boaviztapi import data_dir
+from boaviztapi.parameters import settings
+
+data_dir = settings.boavizta_api_data_dir
 
 config_file = os.path.join(data_dir, 'factors.yml')
 impact_factors = yaml.load(Path(config_file).read_text(), Loader=yaml.CSafeLoader)

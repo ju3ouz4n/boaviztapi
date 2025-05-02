@@ -3,7 +3,8 @@ from typing import List, Union, Optional
 
 from fastapi import APIRouter, Body, HTTPException, Query
 
-from boaviztapi import config, data_dir
+from boaviztapi import config
+from boaviztapi.parameters import settings
 from boaviztapi.dto.device import Server
 from boaviztapi.dto.device.device import mapper_server
 from boaviztapi.model.device import Device
@@ -15,6 +16,7 @@ from boaviztapi.service.archetype import get_server_archetype, get_device_archet
 from boaviztapi.service.verbose import verbose_device
 from boaviztapi.service.impacts_computation import compute_impacts
 
+data_dir = settings.boavizta_api_data_dir
 server_router = APIRouter(
     prefix='/v1/server',
     tags=['server']
