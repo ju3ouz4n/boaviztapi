@@ -6,6 +6,7 @@ on:
     branches:
       - main
       - dev
+      - testworkflow/issue-390
     paths:
       - 'boaviztapi/**'
       - 'tests/**'
