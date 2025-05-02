@@ -3,8 +3,6 @@ name: Python tests  390
 on:
   push:
     branches:
-      - main
-      - dev
       - testworkflow/issue-390
     paths:
       - 'boaviztapi/**'
@@ -20,8 +18,7 @@ on:
       - 'pyproject.toml'
       - 'requirements.txt'
     branches:
-      - main
-      - dev
+      - testworkflow/issue-390
 
 jobs:
   test:
