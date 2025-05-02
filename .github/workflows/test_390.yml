@@ -4,22 +4,6 @@ on:
   push:
     branches:
       - testworkflow/issue-390
-    paths:
-      - 'boaviztapi/**'
-      - 'tests/**'
-      - 'poetry.lock'
-      - 'pyproject.toml'
-      - 'requirements.txt'
-  pull_request:
-    paths:
-      - 'boaviztapi/**'
-      - 'tests/**'
-      - 'poetry.lock'
-      - 'pyproject.toml'
-      - 'requirements.txt'
-    branches:
-      - testworkflow/issue-390
-
 jobs:
   test:
     strategy:
